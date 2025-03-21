@@ -68,7 +68,7 @@ export default function Navbar() {
             <AnimatePresence>
                 {isOpen && (
                     <>
-                        {/* Normal Background Overlay */}
+                        {/* Background Overlay */}
                         <motion.div
                             className="fixed inset-0 bg-black/80 z-20"
                             initial={{ opacity: 0 }}
@@ -95,13 +95,23 @@ export default function Navbar() {
                                     <FaTimes size={28} />
                                 </button>
 
+                                {/* Mobile Navigation Menu */}
                                 <nav className="flex flex-col space-y-6">
+                                    
+                                    {/* All Navigation Links */}
                                     <Link 
                                         to="/" 
                                         className="text-gray-300 hover:text-[#9333EA] transition"
                                         onClick={toggleMenu}
                                     >
                                         Home
+                                    </Link>
+                                    <Link 
+                                        to="/home" 
+                                        className="text-gray-300 hover:text-[#9333EA] transition"
+                                        onClick={toggleMenu}
+                                    >
+                                        Job Posts
                                     </Link>
                                     <Link 
                                         to="/roadmaps" 
@@ -116,6 +126,13 @@ export default function Navbar() {
                                         onClick={toggleMenu}
                                     >
                                         Career Paths
+                                    </Link>
+                                    <Link 
+                                        to='/leetcode' 
+                                        className="text-gray-300 hover:text-[#9333EA] transition"
+                                        onClick={toggleMenu}
+                                    >
+                                        Problem Statements
                                     </Link>
 
                                     {!token ? (
