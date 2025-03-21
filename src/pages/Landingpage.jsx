@@ -78,9 +78,9 @@ export default function LandingPage() {
             </motion.button>
 
             {/* Footer */}
-            <footer className="text-center mt-12 text-gray-500 text-sm sm:text-base">
+{/*             <footer className="text-center mt-12 text-gray-500 text-sm sm:text-base">
                 <p>&copy; 2025 CodeNext | Empowering Coders 🚀</p>
-            </footer>
+            </footer> */}
         </div>
     );
 }
