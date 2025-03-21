@@ -77,7 +77,7 @@ export default function LandingPage() {
                 🚀 Let's Get Started
             </motion.button>
 
-            {/* Footer */}
+            {/* Footer dghvdhg */}
 {/*             <footer className="text-center mt-12 text-gray-500 text-sm sm:text-base">
                 <p>&copy; 2025 CodeNext | Empowering Coders 🚀</p>
             </footer> */}
